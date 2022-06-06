@@ -15,25 +15,25 @@
 		<noscript>
 			<p>您的網頁瀏覽器不支援JavaScript </p>
 		</noscript>
-		<div id="Header">
+		
+		<div id="Header"> <!--上方區塊-->
 			<a href = "https://www.ncu.edu.tw/tw/index.html" target = "_blank"><img src="image/ncu.png" alt="國立中央大學" width="49%" height="160px"></a> <!-- 圖片來源：https://www.ncu.edu.tw/_images/all/logo.png -->
 			<a href = "https://im.mgt.ncu.edu.tw/" target = "_blank"><img src="image/mis.png" alt="中央大學資管系" width="49%" height="160px"></a> <!-- 圖片來源：https://im.mgt.ncu.edu.tw/img/mis_newlogo_compressor.png -->
 		</div>
 		
-		<div id="Leftside">
+		<div id="Leftside"> <!--左方區塊-->
 			
 			<img class="round_img" src="image/headshot.jpg" alt="大頭照" width="200" style="display:block; margin:auto;position:relative; top:10px;">
 			<h1>曾安汝</h1>
 			<h4>國立中央大學資訊管理學系</h4>
 			<hr>
-			<p>我是曾安汝，目前就讀於國立中央大學資訊管理學系，同時也兼職於IKEA宜家家居桃園店。具有較強的責任心和工作主動性，能積極認真做好每件事。</p>
-			<p>在朋友圈裡，我總是那個號召大家的人，一起出去玩、一起做作業...。在工作的團隊中，可以和各個部門的同事相處融洽，配合且順利地完成工作任務。</p>
+			<p class="intro">我是曾安汝，目前就讀於國立中央大學資訊管理學系，同時也兼職於IKEA宜家家居桃園店。具有較強的責任心和工作主動性，能積極認真做好每件事。</p>
+			<p class="intro">在朋友圈裡，我總是那個號召大家的人，一起出去玩、一起做作業...。在工作的團隊中，可以和各個部門的同事相處融洽，配合且順利地完成工作任務。</p>
 			<br>
 			
-			<h3 style="text-align: left; margin-left: 1em;">Contact with me ↓</h3>
+			<h3 style="text-align: left; margin-left: 1em;">Contact with me ↓</h3> <!--聯繫方法-->
 			<hr class="hr1">			
-			<table width="98%" align="center" >
-			
+			<table width="98%" align="center" >	<!--無框線表格-->
 				<tbody>
 					<tr>
 						<td>Mobile</td><td>0912XXXXXXXX</td>
@@ -47,13 +47,19 @@
 					<tr>
 						<td>Address</td><td><a href = "https://reurl.cc/Gxg88y" target = "_blank">桃園市某區某路某號</a></td>
 					</tr>
-				</tbody>
-				
+				</tbody>				
 			</table>
-
+			<br>
+			<button onclick="myFunction()">Press me</button>
+			<p id="contact" style="color: white;"></p>
+				<script>
+					function myFunction(){
+						document.getElementById("contact").innerHTML = "Thanks for watching! (　ﾟ∀ﾟ) ﾉ♡♡♡";
+					}
+				</script>
 		</div>
 		
-		<div id="Rightside">
+		<div id="Rightside"> <!--右方區塊-->
 			<ul>
 				<h2 style="margin-left: 1em;">Programming Language</h2>
 				<hr class="hr2">
